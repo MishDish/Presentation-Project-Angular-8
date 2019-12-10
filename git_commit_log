@@ -1,0 +1,191 @@
+commit 4731acc37d52d94ad4612b4189f6b09ee80c0a77
+Author: Misha <mvucikevik@gmail.com>
+Date:   Wed Oct 30 01:03:53 2019 +0100
+
+    :bug: Paginator fixed after data loading
+
+commit a8d006b88061faddde08d1230575785c6e8aad3d
+Author: Misha <mvucikevik@gmail.com>
+Date:   Wed Oct 30 00:53:04 2019 +0100
+
+    :white_check_mark: Dashboard service unit-tested
+
+commit 5028703bc62ace217dd914e5eb2d648128bb4755
+Author: Misha <mvucikevik@gmail.com>
+Date:   Tue Oct 29 23:41:27 2019 +0100
+
+    :sparkes: Added spinner to the dashboard screen
+
+commit 4be463e2b7ef7d17643b7ad9e9b9ff71ea821eff
+Author: Misha <mvucikevik@gmail.com>
+Date:   Tue Oct 29 23:03:37 2019 +0100
+
+    :art: Clean code and Refactoring
+
+commit ab501a989dacc225611711bf335f58f063361614
+Author: Misha <mvucikevik@gmail.com>
+Date:   Tue Oct 29 21:25:46 2019 +0100
+
+    :lipstick: UI improvements on el. detials page
+
+commit 3b07119fc95f702cee8649cc9460cb9d897edbc9
+Author: Misha <mvucikevik@gmail.com>
+Date:   Tue Oct 29 20:28:40 2019 +0100
+
+    :bug: Fixed elevator update
+
+commit edc6ab01aec92a8db3a0a5ca7781e71ed5db6a62
+Author: Misha <mvucikevik@gmail.com>
+Date:   Tue Oct 29 14:42:06 2019 +0100
+
+    :rotating_light:
+
+commit 3fc9ff4c04c56c1f44013fccd209199ca8fbc67e
+Author: Misha <mvucikevik@gmail.com>
+Date:   Tue Oct 29 14:39:05 2019 +0100
+
+    :white_check_mark: Dashboard component unit-tested
+
+commit 6e0d54c73b6348fc59a6b76e1abe4e253b629421
+Author: Misha <mvucikevik@gmail.com>
+Date:   Tue Oct 29 13:49:55 2019 +0100
+
+    :white_check_mark: Fixed failing unit-tests
+
+commit 37cdaa644dfa422f1140f742afb076c3b3f9f967
+Author: Misha <mvucikevik@gmail.com>
+Date:   Tue Oct 29 00:14:26 2019 +0100
+
+    Fixed lint errors
+
+commit 37f8c5cf536f4e624d163c03965ad8a7060dd0b6
+Author: Misha <mvucikevik@gmail.com>
+Date:   Tue Oct 29 00:05:31 2019 +0100
+
+    :sparkles: Added graph for the elevator stats.
+
+commit 694f95e4501b0844c80cd5888cb07a7ef0873b6f
+Author: Misha <mvucikevik@gmail.com>
+Date:   Mon Oct 28 23:37:02 2019 +0100
+
+    :art: default params to getAllElavators
+
+commit 8c4453554e3bdbfd9d32a0e4215a30bfa338ed2c
+Author: Misha <mvucikevik@gmail.com>
+Date:   Mon Oct 28 23:25:00 2019 +0100
+
+    :bug: Fixed growing data Behavior Subject
+
+commit 1de0c9ec8fd0cc94631bec32e6f1e68246619df4
+Author: Misha <mvucikevik@gmail.com>
+Date:   Mon Oct 28 23:02:13 2019 +0100
+
+    :sparkles: Added details page & update elevator
+
+commit 33564439c26434b73fd42cdcc7b6f3773f2e8cd9
+Author: Misha <mvucikevik@gmail.com>
+Date:   Mon Oct 28 00:20:51 2019 +0100
+
+    :sparkles:  Elevator details page & route
+
+commit 28be01180fa9f555fd3eaf4b6f5e0dbabcbd1568
+Author: Misha <mvucikevik@gmail.com>
+Date:   Mon Oct 28 00:02:12 2019 +0100
+
+    :sparkles: Polling to the dashboard load
+
+commit 4b981f476cf542d2c919686a351df3cdbd5fe636
+Author: Misha <mvucikevik@gmail.com>
+Date:   Sun Oct 27 23:15:41 2019 +0100
+
+    :white_check_mark: Fixed failing unit-tests
+
+commit 05e83145935a2638ec2473f136df7e48b8dc8e7e
+Author: Misha <mvucikevik@gmail.com>
+Date:   Sun Oct 27 22:20:48 2019 +0100
+
+    :sparkles: Get elevators data & display table
+
+commit ce7de999c237fd0ac1e15ce5ffda1f20e6114a87
+Author: Misha <mvucikevik@gmail.com>
+Date:   Sun Oct 27 19:55:42 2019 +0100
+
+    :sparkles:  Token Interceptor implemented
+
+commit cd5f750ca8ce6934f9078f8c2d55fd2bc5f872c8
+Author: Misha <mvucikevik@gmail.com>
+Date:   Sun Oct 27 19:35:58 2019 +0100
+
+    :art: :sparkles: Moved dashboard and init service
+
+commit 27902270e08d1ddb28524c350045ebfcc1c236ed
+Author: Misha <mvucikevik@gmail.com>
+Date:   Sun Oct 27 19:07:07 2019 +0100
+
+    :lipstick: :art: Improved common header & styles
+
+commit a3f951daaa25d9a30cc8fb53cc085da697111ec8
+Author: Misha <mvucikevik@gmail.com>
+Date:   Sun Oct 27 18:36:05 2019 +0100
+
+    :sparkles: Added basic Auh Guard
+
+commit c095f1783aea78b208d6a3f5e3af934e63e52aea
+Author: Misha <mvucikevik@gmail.com>
+Date:   Sat Oct 26 00:13:48 2019 +0200
+
+    :white_check_mark: Fixed failing unit-tests
+
+commit 9f16ff868f6189eaf5313ba6de49783b9654a1d1
+Author: Misha <mvucikevik@gmail.com>
+Date:   Fri Oct 25 23:42:55 2019 +0200
+
+    :sparkles: Added Login/Logout flow
+
+commit b96f34f7a08d299e0d277bff3357be5f80ce02cb
+Author: Misha <mvucikevik@gmail.com>
+Date:   Fri Oct 25 21:59:24 2019 +0200
+
+    :rotating_light: lint error fixed
+
+commit b0b59080fb23c9ed3e0e5b110fe87651166021fd
+Author: Misha <mvucikevik@gmail.com>
+Date:   Fri Oct 25 21:57:22 2019 +0200
+
+    :sparkles: Added core header component
+
+commit 50a5325077bce18711ed89cb22882d9ddb163972
+Author: Misha <mvucikevik@gmail.com>
+Date:   Fri Oct 25 21:56:29 2019 +0200
+
+    :sparkles: Init auth service & UI login form
+
+commit fefa39c10ae068eac72ba60816168a7a434eb5f6
+Author: Misha <mvucikevik@gmail.com>
+Date:   Fri Oct 25 21:54:35 2019 +0200
+
+    :art: Improved init routes
+
+commit a0674516f0f3af1dcd7d7f16874aec08c83daf70
+Author: Misha <mvucikevik@gmail.com>
+Date:   Fri Oct 25 21:53:40 2019 +0200
+
+    :sparkles: set path aliases for the main folders
+
+commit 34db072e17d8b7a9b6d33e7fa2768e2a7dda29c0
+Author: Misha <mvucikevik@gmail.com>
+Date:   Fri Oct 25 21:50:59 2019 +0200
+
+    :sparkles: Added core & material modules
+
+commit 14e8e70fe5fa967a7611a2a69571984bb3f14fdb
+Author: Misha <mvucikevik@gmail.com>
+Date:   Fri Oct 25 00:27:33 2019 +0200
+
+    :tada: Init project & scaffolding
+
+commit 91eada73b505c0a3bb5851c002b87ff572673357
+Author: misha vuchikjevikj <mvucikevik@gmail.com>
+Date:   Thu Oct 24 20:24:34 2019 +0000
+
+    Initial commit
