@@ -1,0 +1,83 @@
+/**
+* --------------------------
+* Dashboard list styles
+*
+* 1.  General
+* 2.  Table
+* 3.  Common ( TO DO : this category should be moved to common.scss file and import where needed)
+***/
+
+.content {
+  /* 1.  General */
+  display: flex;
+  margin: 32px auto;
+  padding: 0 16px;
+  max-width: 1800px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard-table {
+  /* 2.  Table */
+  width: 100%;
+
+  .data-row {
+    cursor: pointer;
+  }
+
+  & table {
+    width: 100%;
+  }
+
+  th[mat-header-cell]:first-of-type {
+    padding-left: 0;
+  }
+
+  tr[mat-row] {
+    &:hover {
+      td[mat-cell] {
+        .hidden {
+          visibility: visible;
+        }
+      }
+    }
+
+    td[mat-cell] {
+      padding: 0 10px 0 0;
+
+      &.vertical-center {
+        vertical-align: baseline;
+      }
+
+      .align-height {
+        height: 32px;
+        line-height: 32px;
+      }
+    }
+  }
+
+  .default-message {
+    background: #125699 no-repeat center center;
+    background-size: contain;
+    width: 100%;
+    height: 305px;
+    margin-top: 120px;
+    text-align: center;
+  }
+}
+
+/* 3. Common */
+.hidden {
+  visibility: hidden;
+}
+
+a,
+a:visited,
+a:hover {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #125699;
+}

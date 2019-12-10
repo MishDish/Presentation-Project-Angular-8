@@ -1,0 +1,16 @@
+/**
+* --------------------------
+* Login screen styles
+*
+* 1.  General
+***/
+
+/* 1.  General */
+.content {
+    display: flex;
+    margin: 32px auto;
+    padding: 0 16px;
+    max-width: 960px;
+    flex-direction: column;
+    align-items: center;
+  }

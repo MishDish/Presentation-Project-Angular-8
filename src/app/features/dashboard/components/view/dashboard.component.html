@@ -1,0 +1,60 @@
+<app-header></app-header>
+
+<div class="content" role="main" >
+   <div class="dashboard-table" >
+      <table mat-table matSort [dataSource]="dataSource" class="data-table">
+         <!-- ID Code Column -->
+         <ng-container matColumnDef="id">
+            <th mat-header-cell class="header-cell" *matHeaderCellDef mat-sort-header>Elevator Code</th>
+            <td mat-cell *matCellDef="let element" class="data-cell">
+               {{ element.id }}
+            </td>
+         </ng-container>
+         <!-- Elevator Code Column -->
+         <ng-container matColumnDef="elevatorCode">
+            <th mat-header-cell class="header-cell" *matHeaderCellDef mat-sort-header>Elevator Code</th>
+            <td mat-cell *matCellDef="let element" class="data-cell">
+               {{ element.elevatorCode }}
+            </td>
+         </ng-container>
+
+         <!-- Status Code Column -->
+         <ng-container matColumnDef="statusCode">
+            <th mat-header-cell class="header-cell" *matHeaderCellDef mat-sort-header>Status Code</th>
+            <td mat-cell *matCellDef="let element" class="data-cell">
+               {{ element.statusCode }}
+            </td>
+         </ng-container>
+
+         <!-- Status Description Column -->
+         <ng-container matColumnDef="statusDescription">
+            <th mat-header-cell class="header-cell" *matHeaderCellDef mat-sort-header>Status Descrption</th>
+            <td mat-cell *matCellDef="let element" class="data-cell">
+               {{ element.statusDescription }}
+            </td>
+         </ng-container>
+
+         <!-- Status Code Column -->
+         <ng-container matColumnDef="lastUpdated">
+            <th mat-header-cell class="header-cell" *matHeaderCellDef mat-sort-header>Last Updated</th>
+            <td mat-cell *matCellDef="let element" class="data-cell">
+               {{ element.lastUpdated | date }}
+            </td>
+         </ng-container>
+         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+         <tr mat-row class="data-row" *matRowDef="let row; columns: displayedColumns;"
+            [routerLink]="['elevator',row.id]">
+         </tr>
+      </table>
+
+      <mat-paginator [ngClass]="{ 'hidden': !(dashboardLoaded$ | async) }"
+         [pageSizeOptions]="[7]" hidePageSize showFirstLastButtons>
+      </mat-paginator>
+
+      <div *ngIf="!dataSource || !dataSource.data || dataSource.data.length === 0">
+         Elevators data is not available
+      </div>
+   </div>
+
+   <mat-spinner *ngIf="!(dashboardLoaded$ | async)"></mat-spinner>
+</div>

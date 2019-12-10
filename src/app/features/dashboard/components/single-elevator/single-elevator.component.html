@@ -1,0 +1,58 @@
+<app-header>
+
+</app-header>
+
+<div class="elevator-content">
+  <!--INFO CARD -->
+  <mat-card>
+    <div class="elevator-info">
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <span class="property-title">Elevator Name : </span> <span *ngIf="!editMode"> {{ elevatorData$.elevatorCode }} </span>
+        <mat-form-field *ngIf="editMode">
+          <input type="text" matInput formControlName="elevatorName" />
+        </mat-form-field>
+        <button mat-button (click)="editMode=true">
+          <mat-icon *ngIf="!editMode" (click)="editMode=true">edit</mat-icon>
+        </button>
+        <button mat-button *ngIf="editMode" type="submit">
+          <mat-icon>check</mat-icon>
+        </button>
+      </form>
+      
+      <div>
+        <span class="property-title">Status Code : </span> <span> {{ elevatorData$?.statusCode }} </span>
+      </div>
+      <div>
+        <span class="property-title">Status Description : </span> <span> {{ elevatorData$?.statusDescription }}
+        </span>
+      </div>
+      <div>
+        <span class="property-title">Last Update : </span> <span> {{ elevatorData$?.lastUpdated | date }} </span>
+      </div>
+    </div>
+  </mat-card>
+
+ <!--GRAPH CARD -->
+  <mat-card>
+    <div class="elevator-graph flex">
+      <div class="flex-item">
+        <div style="display: block;">
+          <canvas baseChart width="600" height="450" [datasets]="lineChartData" [labels]="lineChartLabels"
+            [options]="lineChartOptions" [colors]="lineChartColors" [legend]="lineChartLegend"
+            [chartType]="lineChartType">
+          </canvas>
+        </div>
+      </div>
+      <!-- <div class="flex-item">
+        <table class="table table-responsive table-condensed">
+          <tr>
+            <th *ngFor="let label of lineChartLabels">{{label}}</th>
+          </tr>
+          <tr *ngFor="let d of lineChartData; let i=index" [class]="'line-'+i">
+            <td *ngFor="let label of lineChartLabels; let j=index">{{d && d.data[j]}}</td>
+          </tr>
+        </table>
+      </div> -->
+    </div>
+  </mat-card>
+</div>
